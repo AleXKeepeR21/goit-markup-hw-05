@@ -100,7 +100,7 @@ img {
 /* Header-nav */
 
 .header {
-border-bottom: 1px solid var(--border-heder);
+	border-bottom: 1px solid var(--border-heder);
 }
 
 .header-nav {
@@ -112,8 +112,25 @@ border-bottom: 1px solid var(--border-heder);
 	letter-spacing: 0.02em;
 }
 
-.header-nav.current {
+/* .header-nav.current {
 	color: var(--accent-txt-color);
+} */
+
+.current {
+	color: var(--accent-txt-color);
+	position: relative;
+}
+
+.current::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	display: inline-block;
+	background-color: currentColor;
+	border-radius: 2px;
 }
 
 .header-nav .link {
@@ -166,7 +183,7 @@ border-bottom: 1px solid var(--border-heder);
 .header-container {
 	display: flex;
 	align-items: center;
-	}
+}
 
 .nav-container {
 	display: flex;
@@ -181,12 +198,12 @@ border-bottom: 1px solid var(--border-heder);
 	padding-top: 200px;
 	padding-bottom: 200px;
 	text-align: center;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg);
 	background-color: var(--dark-bg-color);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	}
+}
 
 .hero-title {
 	width: 696px;
@@ -254,7 +271,6 @@ border-bottom: 1px solid var(--border-heder);
 	margin-bottom: 30px;
 	border-radius: 4px;
 }
-
 
 /* Чем мы занимаемся */
 
