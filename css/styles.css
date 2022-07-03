@@ -124,7 +124,7 @@ img {
 .current::before {
 	content: "";
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	width: 100%;
 	height: 4px;
@@ -484,7 +484,7 @@ img {
 
 .portfolio-work .link {
 	display: block;
-	
+
 	transition: box-shadow var(--anim);
 }
 .portfolio-work .link:hover,
